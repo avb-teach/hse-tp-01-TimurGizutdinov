@@ -1,4 +1,4 @@
 #!/bin/bash
 in="$1"
 out="$2"
-cp "$in"/* "$out"/
+find "$in" -type f -exec cp {} "$out" \;
